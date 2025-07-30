@@ -5,6 +5,7 @@ import Home from "./Pages/Home";
 import Sidebar from "./components/Sidebar";
 import LandingPage from "./Pages/LandingPage";
 import UseEffect from "./Pages/UseEffect";
+import UseState from "./components/UseState";
 
 function App() {
   return (
