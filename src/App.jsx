@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 
-import Home from "./pages/Home";
+import Home from "./Pages/Home";
 import UseState from "./pages/UseState";
 import Sidebar from "./components/Sidebar";
 import LandingPage from "./Pages/LandingPage";
