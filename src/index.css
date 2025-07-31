@@ -22,3 +22,27 @@ body {
 .font-space-grotesk {
   font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
 }
+
+@font-face {
+  font-family: "OCR A Std";
+  font-style: normal;
+  font-weight: normal;
+  src: local("OCR A Std"), url("OCRAStd.woff") format("woff");
+}
+
+/* Utility classes for the OCR A Std font */
+.font-ocr {
+  font-family: "OCR A Std", monospace, sans-serif;
+}
+
+.font-ocr-large {
+  font-family: "OCR A Std", monospace, sans-serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.font-ocr-small {
+  font-family: "OCR A Std", monospace, sans-serif;
+  font-size: 0.875rem;
+  font-weight: normal;
+}

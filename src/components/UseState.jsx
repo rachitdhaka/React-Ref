@@ -6,7 +6,7 @@ const UseState = () => {
   return (
     <div className="p-4 bg-gray-50 h-screen w-full pl-5">
       {/* Introduction and Content */}
-      <h1 className="text-2xl font-semibold mb-4">useState Hook </h1>
+      <h1 className="text-2xl font-bold  font-ocr mb-4">useState Hook </h1>
       <h1 className="text-md text-[#666666] pl-2 ">
         {" "}
         Manages all the states and Functionality. Lets you create a state

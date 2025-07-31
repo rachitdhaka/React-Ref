@@ -6,7 +6,7 @@ const Card = ({ title, Def }) => {
 
 
       <div className=" flex p-3 justify-between items-center">
-        <h2 className="text-md font-medium ">{title}</h2>
+        <h2 className="text-md font-bold font-ocr ">{title}</h2>
         <h4 className="text-[12px] bg-[#EFF6FF] text-[#2563EB] max-w-fit px-2 py-1 rounded-full"> Hooks </h4>
       </div>
 
@@ -14,7 +14,7 @@ const Card = ({ title, Def }) => {
 
 
       <div className="flex p-3">
-        <p className="text-sm font-regular text-[#4B5563] ">{Def}</p>
+        <p className="text-sm font-regular font-ocr-small text-[#4B5563] ">{Def}</p>
       </div>
 
 

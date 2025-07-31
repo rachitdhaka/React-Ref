@@ -10,7 +10,7 @@ const Sidebar = () => {
     <div className="bg-white h-screen w-64 p-4 border-r border-gray-200">
       <div>
         <h1 className="font-bold text-xl  text-black p-2 rounded">
-          <Link to="/dashboard">React Hooks</Link>
+          <Link to="/dashboard" className="font-ocr-large">React Hooks</Link>
         </h1>
       </div>
 

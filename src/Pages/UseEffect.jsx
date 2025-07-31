@@ -46,7 +46,7 @@ const UseEffect = () => {
   return (
     <div className="p-4 bg-gray-50 h-screen w-full pl-5">
       {/* Introduction and Content */}
-      <h1 className="text-2xl font-semibold mb-4">useEffect Hook </h1>
+      <h1 className="text-2xl font-semibold font-ocr mb-4">useEffect Hook </h1>
       <h1 className="text-md text-[#666666] pl-2 ">
         {" "}
         Performs side effects in functional components. It runs after every
@@ -113,7 +113,7 @@ export default TimerComponent;`}</pre>
         </div>
         {/* Working Component */}
         <div className="bg-white border border-gray-300 p-4 rounded shadow  h-fit w-fit">
-          <h1 className="text-xl font-bold mb-4">useEffect Hook Example</h1>
+          <h1 className="text-xl font-bold   mb-4">useEffect Hook Example</h1>
           <p className="text-lg mb-2">Timer: {timer}s</p>
           <p className="text-lg mb-2">
             Status: {isRunning ? "Running" : "Stopped"}
