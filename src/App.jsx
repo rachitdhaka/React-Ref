@@ -3,7 +3,7 @@ import { useState } from "react";
 
 import Home from "./Pages/Home";
 // import UseState from "./Pages/UseState";
-import Sidebar from "./components/SIdebar";
+import Sidebar from "./components/Sidebar";
 import LandingPage from "./Pages/LandingPage";
 import UseEffect from "./Pages/UseEffect";
 import UseState from "./components/UseState";
