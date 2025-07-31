@@ -62,20 +62,20 @@ const LandingPage = () => {
   return (
     <div className='min-h-screen bg-gray-50 w-full'>
       {/* Hero Section */}
-      <div className='flex flex-col justify-center items-center py-16 px-6'>
+      <div className='flex flex-col justify-center items-center py-12 md:py-16 px-4 md:px-6'>
         <div className='text-center max-w-4xl mx-auto'>
-          <h1 className='text-3xl md:text-4xl lg:text-5xl font-light text-gray-900 mb-4 leading-tight'>
+          <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-gray-900 mb-4 leading-tight'>
             Master React
             <span className='block font-normal text-blue-600'>with Interactive Examples</span>
           </h1>
-          <p className='text-base md:text-lg text-gray-500 mb-8 max-w-2xl mx-auto font-light'>
+          <p className='text-sm sm:text-base md:text-lg text-gray-500 mb-6 md:mb-8 max-w-2xl mx-auto font-light'>
             A clean, visual guide to React hooks, components, and modern patterns
           </p>
           <div className='flex flex-col sm:flex-row gap-3 justify-center items-center'>
-            <Link to="/dashboard" className='px-6 py-2.5 bg-blue-600 text-white text-sm font-medium rounded-full hover:bg-blue-700 transition-all duration-200 hover:shadow-lg'>
+            <Link to="/dashboard" className='w-full sm:w-auto px-6 py-2.5 bg-blue-600 text-white text-sm font-medium rounded-full hover:bg-blue-700 transition-all duration-200 hover:shadow-lg text-center'>
               Start Learning
             </Link>
-            <button className='px-6 py-2.5 border border-gray-300 text-gray-600 text-sm font-medium rounded-full hover:bg-white hover:shadow-sm transition-all duration-200'>
+            <button className='w-full sm:w-auto px-6 py-2.5 border border-gray-300 text-gray-600 text-sm font-medium rounded-full hover:bg-white hover:shadow-sm transition-all duration-200'>
               View on GitHub
             </button>
           </div>
@@ -83,21 +83,21 @@ const LandingPage = () => {
       </div>
 
       {/* Concepts Grid */}
-      <div className='py-12 px-6'>
+      <div className='py-8 md:py-12 px-4 md:px-6'>
         <div className='max-w-5xl mx-auto'>
-          <h2 className='text-xl md:text-2xl font-light text-center mb-10 text-gray-800'>
+          <h2 className='text-lg sm:text-xl md:text-2xl font-light text-center mb-8 md:mb-10 text-gray-800'>
             Essential Concepts
           </h2>
           
-          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4'>
             {concepts.map((concept, index) => (
               <div 
                 key={index} 
-                className='group bg-white border border-gray-100 rounded-2xl p-5 hover:shadow-md hover:border-gray-200 transition-all duration-200 cursor-pointer'
+                className='group bg-white border border-gray-100 rounded-2xl p-4 md:p-5 hover:shadow-md hover:border-gray-200 transition-all duration-200 cursor-pointer'
               >
-                <div className='text-2xl mb-3 group-hover:scale-110 transition-transform duration-200'>{concept.icon}</div>
-                <h3 className='text-lg font-medium mb-2 text-gray-900 group-hover:text-blue-600 transition-colors'>{concept.title}</h3>
-                <p className='text-gray-500 text-sm leading-relaxed mb-3'>{concept.description}</p>
+                <div className='text-xl md:text-2xl mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-200'>{concept.icon}</div>
+                <h3 className='text-base md:text-lg font-medium mb-2 text-gray-900 group-hover:text-blue-600 transition-colors'>{concept.title}</h3>
+                <p className='text-gray-500 text-xs md:text-sm leading-relaxed mb-2 md:mb-3'>{concept.description}</p>
                 <div className='text-blue-500 text-xs font-medium group-hover:text-blue-600 transition-colors'>
                   Learn more →
                 </div>
@@ -108,23 +108,23 @@ const LandingPage = () => {
       </div>
 
       {/* Features Section */}
-      <div className='py-12 px-6'>
+      <div className='py-8 md:py-12 px-4 md:px-6'>
         <div className='max-w-4xl mx-auto'>
-          <div className='grid grid-cols-1 md:grid-cols-3 gap-8 text-center'>
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 text-center'>
             <div className='p-4'>
-              <div className='text-2xl mb-3'>💻</div>
-              <h3 className='text-base font-medium mb-2 text-gray-900'>Interactive</h3>
-              <p className='text-gray-500 text-sm'>Live code examples with instant feedback</p>
+              <div className='text-xl md:text-2xl mb-2 md:mb-3'>💻</div>
+              <h3 className='text-sm md:text-base font-medium mb-2 text-gray-900'>Interactive</h3>
+              <p className='text-gray-500 text-xs md:text-sm'>Live code examples with instant feedback</p>
             </div>
             <div className='p-4'>
-              <div className='text-2xl mb-3'>⭐</div>
-              <h3 className='text-base font-medium mb-2 text-gray-900'>Best Practices</h3>
-              <p className='text-gray-500 text-sm'>Industry standards and conventions</p>
+              <div className='text-xl md:text-2xl mb-2 md:mb-3'>⭐</div>
+              <h3 className='text-sm md:text-base font-medium mb-2 text-gray-900'>Best Practices</h3>
+              <p className='text-gray-500 text-xs md:text-sm'>Industry standards and conventions</p>
             </div>
             <div className='p-4'>
-              <div className='text-2xl mb-3'>🌍</div>
-              <h3 className='text-base font-medium mb-2 text-gray-900'>Real-world</h3>
-              <p className='text-gray-500 text-sm'>Apply to actual project scenarios</p>
+              <div className='text-xl md:text-2xl mb-2 md:mb-3'>🌍</div>
+              <h3 className='text-sm md:text-base font-medium mb-2 text-gray-900'>Real-world</h3>
+              <p className='text-gray-500 text-xs md:text-sm'>Apply to actual project scenarios</p>
             </div>
           </div>
         </div>
@@ -149,7 +149,7 @@ const LandingPage = () => {
       </div> */}
 
       {/* Footer */}
-      <footer className='bg-gray-900 text-white py-6 px-6'>
+      <footer className='bg-gray-900 text-white py-4 md:py-6 px-4 md:px-6'>
         <div className='max-w-5xl mx-auto text-center'>
           <p className='text-gray-400 text-xs'>Created by Rachit Dhaka • React Learning Guide</p>
         </div>

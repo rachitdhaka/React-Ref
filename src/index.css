@@ -1,13 +1,38 @@
 @import 'tailwindcss';
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
 
-
 * {
   font-family: 'Inter', 'Geist', 'Space Grotesk', system-ui, -apple-system, sans-serif;
 }
 
 body {
   font-family: 'Inter', 'Geist', 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Mobile-specific optimizations */
+@media (max-width: 768px) {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  button, a {
+    min-height: 44px; /* Ensures touch targets are at least 44px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  input, textarea {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+}
+
+/* Prevent horizontal scroll on mobile */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
 }
 
 /* Font utility classes for Tailwind */
@@ -41,8 +66,20 @@ body {
   font-weight: normal;
 }
 
+@media (max-width: 768px) {
+  .font-ocr-large {
+    font-size: 1.25rem;
+  }
+}
+
 .font-ocr-small {
   font-family: "OCR A Std", monospace, sans-serif;
   font-size: 0.875rem;
   font-weight: normal;
+}
+
+@media (max-width: 768px) {
+  .font-ocr-small {
+    font-size: 0.75rem;
+  }
 }
